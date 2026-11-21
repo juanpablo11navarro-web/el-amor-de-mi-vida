@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Formas en las que te amo, mi Pelona 💕</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --rosa-claro:#ffe4ec;
+    --rosa-medio:#ff9ebb;
+    --rosa-fuerte:#ff6b9d;
+    --azul-claro:#e0f2fe;
+    --azul-medio:#89cff0;
+    --azul-fuerte:#4ea8de;
+    --blanco:#fff;
+    --texto:#4a3f55;
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family:'Quicksand',sans-serif;
+    color:var(--texto);
+    background-color:#fff8fa;
+    background-image:
+        radial-gradient(ellipse 35px 25px at 15% 20%,rgba(255,182,193,.25) 98%,transparent 100%),
+        radial-gradient(ellipse 45px 30px at 80% 15%,rgba(137,207,240,.25) 98%,transparent 100%),
+        radial-gradient(ellipse 30px 40px at 45% 50%,rgba(255,182,193,.18) 98%,transparent 100%),
+        radial-gradient(ellipse 50px 30px at 10% 75%,rgba(137,207,240,.22) 98%,transparent 100%),
+        radial-gradient(ellipse 38px 28px at 88% 82%,rgba(255,182,193,.25) 98%,transparent 100%);
+    background-size:320px 320px;
+    overflow-x:hidden;
+    animation:fadePage 1s ease;
+}
+
+h1,h2,h3,.btn {
+    font-family:'Fredoka',sans-serif;
+}
+
+@keyframes fadePage {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+@keyframes float {
+    0%,100% {transform:translateY(0);}
+    50% {transform:translateY(-10px);}
+}
+
+@keyframes popIn {
+    from {opacity:0;transform:scale(.85) translateY(20px);}
+    to {opacity:1;transform:scale(1) translateY(0);}
+}
+
+@keyframes fall {
+    to {
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+@keyframes heartbeat {
+    0%,100% {transform:scale(1);}
+    50% {transform:scale(1.12);}
+}
+
+/* Decoraciones de las esquinas */
+
+.esquina-img {
+    position:fixed;
+    width:105px;
+    height:105px;
+    object-fit:contain;
+    z-index:20;
+    pointer-events:none;
+    filter:drop-shadow(0 6px 12px rgba(0,0,0,.12));
+    animation:float 4s ease-in-out infinite;
+}
+
+.esquina-sup-izq {top:12px;left:12px;transform:rotate(-8deg);}
+.esquina-sup-der {top:12px;right:12px;animation-delay:.5s;}
+.esquina-inf-izq {bottom:12px;left:12px;animation-delay:1s;}
+.esquina-inf-der {bottom:12px;right:12px;animation-delay:1.5s;}
+
+.container {
+    position:relative;
+    z-index:5;
+    max-width:920px;
+    margin:0 auto;
+    padding:30px 20px 80px;
+}
+
+/* Encabezado */
+
+header {
+    text-align:center;
+    background:linear-gradient(135deg,var(--rosa-claro),var(--azul-claro));
+    border:4px solid var(--blanco);
+    border-radius:30px;
+    padding:38px 24px;
+    box-shadow:0 12px 30px rgba(255,107,157,.15);
+    margin-bottom:30px;
+    animation:popIn .9s ease;
+}
+
+.badge-cumple {
+    display:inline-block;
+    background:linear-gradient(90deg,var(--rosa-fuerte),var(--azul-fuerte));
+    color:white;
+    padding:8px 20px;
+    border-radius:50px;
+    font-weight:700;
+    font-size:.95rem;
+    margin-bottom:14px;
+}
+
+header h1 {
+    font-size:clamp(2rem,5vw,3rem);
+    color:var(--rosa-fuerte);
+    text-shadow:2px 2px 0 white;
+    margin-bottom:12px;
+    line-height:1.15;
+}
+
+header h1 span {
+    color:var(--azul-fuerte);
+}
+
+.subtitle {
+    font-size:1.08rem;
+    max-width:580px;
+    margin:0 auto 22px;
+    line-height:1.6;
+    font-weight:600;
+}
+
+/* Contador */
+
+.counter-box {
+    background:white;
+    border-radius:22px;
+    padding:18px;
+    max-width:560px;
+    margin:0 auto;
+    border:3px solid var(--azul-medio);
+    box-shadow:0 8px 20px rgba(78,168,222,.15);
+}
+
+.counter-title {
+    font-weight:700;
+    color:var(--azul-fuerte);
+    margin-bottom:12px;
+    font-size:.98rem;
+}
+
+.counter-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.time-unit {
+    background:linear-gradient(180deg,var(--rosa-claro),var(--azul-claro));
+    padding:10px 5px;
+    border-radius:15px;
+}
+
+.time-unit span {
+    display:block;
+    font-family:'Fredoka',sans-serif;
+    font-size:1.55rem;
+    font-weight:700;
+    color:var(--rosa-fuerte);
+    font-variant-numeric:tabular-nums;
+}
+
+.time-unit small {
+    font-size:.75rem;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+/* Galería */
+
+.gallery-section {
+    margin:35px 0;
+    text-align:center;
+}
+
+.section-title {
+    font-size:1.85rem;
+    color:var(--azul-fuerte);
+    margin-bottom:8px;
+}
+
+.section-desc {
+    margin-bottom:22px;
+    font-weight:600;
+}
+
+.polaroid-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(185px,1fr));
+    gap:18px;
+}
+
+.polaroid {
+    background:white;
+    padding:10px 10px 18px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:2px solid var(--rosa-claro);
+    transition:transform .3s ease;
+    animation:popIn .8s ease both;
+}
+
+.polaroid:nth-child(even) {
+    border-color:var(--azul-claro);
+    transform:rotate(1.5deg);
+}
+
+.polaroid:nth-child(odd) {
+    transform:rotate(-1.5deg);
+}
+
+.polaroid:hover {
+    transform:scale(1.05) rotate(0);
+}
+
+.polaroid img {
+    width:100%;
+    height:185px;
+    object-fit:cover;
+    border-radius:12px;
+    background-color:var(--rosa-claro);
+}
+
+.polaroid p {
+    margin-top:10px;
+    font-family:'Fredoka',sans-serif;
+    color:var(--rosa-fuerte);
+    font-size:.98rem;
+}
+
+/* Botones */
+
+.actions-box {
+    background:white;
+    border:4px solid var(--rosa-medio);
+    border-radius:28px;
+    padding:28px 20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(255,107,157,.14);
+}
+
+.buttons-row {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+    margin-top:16px;
+}
+
+.btn {
+    border:none;
+    cursor:pointer;
+    padding:14px 24px;
+    border-radius:50px;
+    font-size:1.03rem;
+    font-weight:600;
+    transition:all .25s ease;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.btn:hover {
+    transform:translateY(-5px) scale(1.04);
+    box-shadow:0 10px 22px rgba(255,107,157,.25);
+}
+
+.btn:active {
+    transform:scale(.96);
+}
+
+.btn-random {
+    background:linear-gradient(135deg,var(--rosa-fuerte),#ff85a1);
+    color:white;
+}
+
+.btn-list {
+    background:var(--azul-claro);
+    color:var(--azul-fuerte);
+    border:2px solid var(--azul-medio);
+}
+
+.btn-letter {
+    background:linear-gradient(135deg,var(--azul-fuerte),var(--rosa-fuerte));
+    color:white;
+}
+
+/* Razón aleatoria */
+
+.random-display {
+    display:none;
+    background:linear-gradient(135deg,#fff2f6,#ebf7ff);
+    border:3px dashed var(--azul-medio);
+    border-radius:22px;
+    padding:24px 20px;
+    margin-top:22px;
+}
+
+.random-display.visible {
+    display:block;
+    animation:popIn .45s ease;
+}
+
+.num-badge {
+    background:var(--azul-fuerte);
+    color:white;
+    padding:5px 15px;
+    border-radius:20px;
+    font-weight:700;
+    font-size:.9rem;
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+.random-text {
+    font-size:1.22rem;
+    font-weight:700;
+    line-height:1.5;
+}
+
+/* Lista de razones */
+
+.reasons-section {
+    display:none;
+    margin-top:28px;
+}
+
+.reasons-section.visible {
+    display:block;
+    animation:popIn .5s ease;
+}
+
+.reasons-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:16px;
+    margin-top:16px;
+}
+
+.reason-card {
+    background:white;
+    border-radius:20px;
+    padding:18px;
+    box-shadow:0 6px 15px rgba(0,0,0,.05);
+    border-top:5px solid var(--rosa-medio);
+    text-align:left;
+    transition:transform .25s ease,box-shadow .25s ease;
+    animation:popIn .45s ease both;
+}
+
+.reason-card:nth-child(even) {
+    border-top-color:var(--azul-medio);
+}
+
+.reason-card:hover {
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(255,107,157,.15);
+}
+
+.reason-num {
+    font-family:'Fredoka',sans-serif;
+    font-weight:700;
+    font-size:1rem;
+    background:var(--rosa-claro);
+    color:var(--rosa-fuerte);
+    padding:3px 11px;
+    border-radius:10px;
+    display:inline-block;
+    margin-bottom:8px;
+}
+
+.reason-card:nth-child(even) .reason-num {
+    background:var(--azul-claro);
+    color:var(--azul-fuerte);
+}
+
+.reason-text {
+    font-size:1rem;
+    line-height:1.48;
+    font-weight:600;
+}
+
+/* Carta */
+
+.modal {
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(74,63,85,.78);
+    backdrop-filter:blur(6px);
+    z-index:100;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.show {
+    display:flex;
+    animation:fadePage .3s ease;
+}
+
+.modal-content {
+    background:white;
+    border:5px solid var(--rosa-medio);
+    border-radius:30px;
+    max-width:550px;
+    width:100%;
+    padding:32px 26px;
+    text-align:center;
+    position:relative;
+    max-height:90vh;
+    overflow-y:auto;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    animation:popIn .5s ease;
+}
+
+.close-modal {
+    position:absolute;
+    top:14px;
+    right:20px;
+    font-size:1.8rem;
+    cursor:pointer;
+    color:var(--rosa-fuerte);
+    font-weight:bold;
+    background:none;
+    border:none;
+}
+
+.modal-content h2 {
+    color:var(--rosa-fuerte);
+    font-size:1.85rem;
+    margin-bottom:20px;
+}
+
+.modal-content p {
+    font-size:1.03rem;
+    line-height:1.65;
+    margin-bottom:14px;
+    text-align:left;
+    font-weight:600;
+}
+
+.firma {
+    text-align:right!important;
+    font-family:'Fredoka',sans-serif;
+    font-size:1.2rem!important;
+    color:var(--azul-fuerte);
+    margin-top:15px;
+}
+
+/* Confeti */
+
+.confetti {
+    position:fixed;
+    top:-20px;
+    z-index:200;
+    pointer-events:none;
+    animation:fall linear forwards;
+}
+
+/* Corazones decorativos */
+
+.heart {
+    position:fixed;
+    bottom:-30px;
+    z-index:1;
+    pointer-events:none;
+    animation:heartFloat linear forwards;
+}
+
+@keyframes heartFloat {
+    to {
+        transform:translateY(-110vh) rotate(35deg);
+        opacity:0;
+    }
+}
+
+footer {
+    text-align:center;
+    padding:35px 15px 10px;
+    font-weight:700;
+    color:var(--rosa-fuerte);
+    font-size:1rem;
+}
+
+@media(max-width:600px) {
+    .esquina-img {
+        width:65px;
+        height:65px;
+    }
+
+    .container {
+        padding:20px 12px 60px;
+    }
+
+    header {
+        padding:35px 15px;
+    }
+
+    .counter-grid {
+        gap:5px;
+    }
+
+    .time-unit span {
+        font-size:1.25rem;
+    }
+
+    .random-text {
+        font-size:1.1rem;
+    }
+
+    .buttons-row {
+        flex-direction:column;
+    }
+
+    .btn {
+        width:100%;
+    }
+
+    .modal-content {
+        padding:35px 18px 25px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    *,*::before,*::after {
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        scroll-behavior:auto!important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- DECORACIONES -->
+<img src="fotoxtra1.png" alt="" class="esquina-img esquina-sup-izq" onerror="this.style.display='none'">
+<img src="fotoxtra2.png" alt="" class="esquina-img esquina-sup-der" onerror="this.style.display='none'">
+<img src="fotoxtra3.png" alt="" class="esquina-img esquina-inf-izq" onerror="this.style.display='none'">
+<img src="fotoxtra4.png" alt="" class="esquina-img esquina-inf-der" onerror="this.style.display='none'">
+
+<div class="container">
+
+<header>
+    <div class="badge-cumple">🎂 ¡FELIZ CUMPLEAÑOS, MI VIDA! 💕</div>
+
+    <h1>100 Formas en las que te amo, <span>mi Pelona</span></h1>
+
+    <p class="subtitle">
+        Para mi niña, mi solecito, mi amor bonito.
+        Hice este detalle especial para ti en tu cumpleaños
+        para recordarte cada día cuánto te quiero.
+    </p>
+
+    <div class="counter-box">
+        <div class="counter-title">
+            💙 Llevamos sumando momentos juntos desde el 24 de agosto 💕
+        </div>
+
+        <div class="counter-grid">
+            <div class="time-unit"><span id="days">0</span><small>Días</small></div>
+            <div class="time-unit"><span id="hours">00</span><small>Horas</small></div>
+            <div class="time-unit"><span id="minutes">00</span><small>Minutos</small></div>
+            <div class="time-unit"><span id="seconds">00</span><small>Segundos</small></div>
+        </div>
+    </div>
+</header>
+
+<!-- GALERÍA -->
+
+<section class="gallery-section">
+    <h2 class="section-title">📸 Nuestros Momentos</h2>
+    <p class="section-desc">Contigo cualquier momento se vuelve especial.</p>
+
+    <div class="polaroid-grid">
+
+        <div class="polaroid">
+            <img src="foto1.jpg" alt="Nosotros 1"
+            onerror="this.src='https://placehold.co/400x400/ffe4ec/ff6b9d?text=foto1.jpg'">
+            <p>Mi pelona hermosa 💕</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="foto2.jpg" alt="Nosotros 2"
+            onerror="this.src='https://placehold.co/400x400/e0f2fe/4ea8de?text=foto2.jpg'">
+            <p>Tus ojitos ✨</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="foto3.jpg" alt="Nosotros 3"
+            onerror="this.src='https://placehold.co/400x400/ffe4ec/ff6b9d?text=foto3.jpg'">
+            <p>Tú y tu Pablito pelón 💙</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="foto4.jpg" alt="Nosotros 4"
+            onerror="this.src='https://placehold.co/400x400/e0f2fe/4ea8de?text=foto4.jpg'">
+            <p>Mi solecito ☀️</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BOTONES -->
+
+<section class="actions-box">
+
+    <h2 class="section-title">💌 Elige cómo leerlo</h2>
+    <p style="font-weight:600;">Pícale a cualquier botón para empezar.</p>
+
+    <div class="buttons-row">
+
+        <button type="button" class="btn btn-random" onclick="showRandomReason()">
+            🎲 Razón al azar
+        </button>
+
+        <button type="button" class="btn btn-list" id="toggleListBtn" onclick="toggleFullList()">
+            📜 Ver mis 100 razones
+        </button>
+
+        <button type="button" class="btn btn-letter" onclick="openLetterModal()">
+            🎂 Carta de cumpleaños
+        </button>
+
+    </div>
+
+    <!-- RAZÓN ALEATORIA -->
+
+    <div class="random-display" id="randomDisplay">
+        <span class="num-badge" id="randomBadge">Razón #1</span>
+        <p class="random-text" id="randomText"></p>
+    </div>
+
+    <!-- LISTA COMPLETA -->
+
+    <div class="reasons-section" id="reasonsSection">
+        <div class="reasons-grid" id="reasonsGrid"></div>
+    </div>
+
+</section>
+
+<footer>
+    Con todo mi amor, tu Pablito pelón 💙💕
+</footer>
+
+</div>
+
+<!-- CARTA DE CUMPLEAÑOS -->
+
+<div class="modal" id="letterModal" onclick="handleBackdropClick(event)">
+
+    <div class="modal-content">
+
+        <button type="button" class="close-modal" onclick="closeLetterModal()">
+            &times;
+        </button>
+
+        <h2>🎂 ¡Feliz Cumpleaños, Mi Pelona! 💙💕</h2>
+
+        <p>
+            Mi niña bonita, hoy celebramos el día en que nació la persona
+            que ilumina mis días. No importa cuántas veces me digas
+            "no, que no", me jales el pelito, me digas "mamoncito",
+            me alces el dedo de broma o me amenaces con darme un putazo
+            cuando te hago enojar de juego: cada segundo contigo es lo
+            mejor que me ha pasado.
+        </p>
+
+        <p>
+            Amo tus ojos, tu risa, tus locuras, verte dormir toda tierna,
+            cuando te maquillas y te ves todavía más preciosa de lo que
+            ya eres, y hasta cuando me dices "te odio" cuando te gano
+            en el Free Fire.
+        </p>
+
+        <p>
+            Gracias por ser mi solecito, mi amor y mi vida.
+            Espero que este cumpleaños esté lleno de cosas bonitas
+            y muchos besos míos. Te amo muchísimo hoy y siempre.
+        </p>
+
+        <p class="firma">
+            Con todo mi amor,<br>
+            Tu Pablito pelón 💕
+        </p>
+
+    </div>
+</div>
+
+<script>
+
+// ========================================
+// LAS 100 RAZONES
+// ========================================
+
+const razones = [
+
+"Porque eres mi pelona favorita en todo el universo.",
+"Por esos ojos tan hermosos que tienes y en los que siempre me pierdo.",
+"Porque besar tus labios es mi parte favorita de cualquier día.",
+"Por la forma tan única y auténtica en la que eres tú misma.",
+"Por tu risa contagiosa que me arregla hasta el peor día.",
+"Por todas tus locuras que hacen que nunca me aburra contigo.",
+"Porque me encanta decirte 'mi niña' y ver cómo te pones.",
+"Por la ternura que me das cuando te quedas dormida.",
+"Porque te ves preciosa cuando te maquillas, aunque al natural ya me traes loco.",
+"Por las horas que pasas viendo TikToks y luego me cuentas o me enseñas lo que viste.",
+"Porque eres mi solecito, la que ilumina mis días nublados.",
+"Por cómo dices 'no, que no' con ese tono tan chistoso que me mata de risa.",
+"Por esos jaloncitos de pelito que me das de cariño (aunque digas que no).",
+"Porque hasta cuando me dices 'te voy a dar un putazo' me das ternura y risa.",
+"Por la forma en que me dices 'pinche amor pelón' y haces que me sienta el más querido.",
+"Por cómo me dices 'mamoncito' cuando me pongo pesado de broma y me haces reír.",
+"Por lo chistosa y tierna que te ves cuando me alzas el dedo de juego.",
+"Por tu carita de enojo chistoso cuando te gano en el Free Fire y me dices 'te odio'.",
+"Porque te gustan las vaquitas y ahora cada vez que veo una pienso en ti.",
+"Por tu amor por Snoopy, que es casi tan tierno como tú.",
+"Porque contigo soy tu 'Pablito pelón' y no cambiaría ese apodo por nada.",
+"Por cómo me abrazas y haces que todo lo demás deje de importar.",
+"Porque desde aquel 24 de agosto mi vida se volvió mucho más bonita.",
+"Por la paz que siento cuando estoy a tu lado sin hacer nada.",
+"Porque tienes la sonrisa más linda que he visto jamás.",
+"Por cómo te emocionas con los detalles pequeños.",
+"Porque eres mi amor y mi vida entera.",
+"Por la confianza que tenemos para decirnos cualquier tontería.",
+"Porque incluso recién despierta te ves hermosa, mi bonita.",
+"Por tus ocurrencias repentinas que me sacan una carcajada de la nada.",
+"Porque me encanta consentirte y verte feliz.",
+"Por cómo me miras cuando crees que no me doy cuenta.",
+"Porque haces que quiera ser mejor cada día solo para verte sonreír.",
+"Por nuestros chistes internos que nadie más entendería.",
+"Por lo bien que la pasamos jugando juntos.",
+"Porque tu voz es mi sonido favorito.",
+"Por la forma en que arrugas la carita cuando algo no te parece.",
+"Porque eres dulce, divertida y un poquito enojona en la medida perfecta.",
+"Por cada mensaje tuyo que me alegra el celular y el corazón.",
+"Porque me encanta tomarte de la mano y sentir que estás ahí.",
+"Por lo linda que te ves concentrada haciendo tu maquillaje.",
+"Porque eres mi lugar seguro en este mundo.",
+"Por todas las veces que nos reímos hasta que nos duele la panza.",
+"Porque me encanta molestarte de cariño solo para escuchar tu 'no, que no'.",
+"Por lo mucho que te esfuerzas en lo que haces.",
+"Porque tienes un corazón enorme, mi niña.",
+"Por cómo combinas lo tierna con lo ruda cuando me amenazas de broma.",
+"Porque cada beso tuyo se siente como el primero.",
+"Por las ganas que siempre tengo de verte, incluso si nos vimos hace rato.",
+"Porque eres la protagonista de todos mis pensamientos bonitos.",
+"Por tu estilo único y lo bien que te queda todo.",
+"Porque haces que los días pasen volando cuando estoy contigo.",
+"Por lo tierna que eres cuando tienes sueño.",
+"Porque me encanta ser tu Pablito pelón en las buenas y en las malas.",
+"Por cómo me escuchas cuando necesito hablar de cualquier cosa.",
+"Porque tienes la mirada más expresiva del mundo.",
+"Por todas las aventuras que todavía nos faltan vivir juntos.",
+"Porque me haces sentir amado de una forma muy especial.",
+"Por tu sentido del humor tan chido.",
+"Porque hasta tus berrinchitos de broma me encantan.",
+"Por la alegría que traes a mi vida desde que llegaste.",
+"Porque eres mi persona favorita para compartir un buen rato.",
+"Por cómo te brillan los ojos cuando hablas de algo que te gusta.",
+"Porque nunca me canso de decirte lo bonita que estás.",
+"Por cada momento sencillo que contigo se vuelve inolvidable.",
+"Porque me encanta cuando me sigues el juego en mis locuras.",
+"Por lo especial que haces sentir a las personas que quieres.",
+"Porque eres mi pelona preciosa y nadie te iguala.",
+"Por cómo me das ánimos sin siquiera darte cuenta.",
+"Porque me encanta ver tus TikToks favoritos contigo.",
+"Por la química tan increíble que tenemos desde el principio.",
+"Porque me haces reír incluso cuando intento ponerme serio.",
+"Por tu forma tan linda de demostrar cariño.",
+"Porque cada día encuentro algo nuevo que me gusta de ti.",
+"Por lo bien que se siente abrazarte fuerte.",
+"Porque eres mi solecito en los días grises.",
+"Por las ganas de darte mil besos cada vez que te veo.",
+"Porque contigo aprendí lo bonito que es querer de verdad.",
+"Por tu personalidad tan fresca y llena de vida.",
+"Porque me encanta cuando te ríes de mis tonterías.",
+"Por todas las veces que me dices 'pinche amor pelón' con cariño.",
+"Porque eres mi compañera favorita de vida y de partidas.",
+"Por lo linda que te ves cuando estás feliz.",
+"Porque me inspiras a hacer cosas bonitas como esta página para ti.",
+"Por tu ternura infinita cuando quieres chiquearte.",
+"Porque no hay nadie más con quien prefiera pasar mi tiempo.",
+"Por cómo haces que cada día valga la pena.",
+"Porque tus abrazos recargan toda mi energía.",
+"Por lo auténtica que eres; nunca finges ser alguien más.",
+"Porque me encanta cuidar de ti, mi niña.",
+"Por cada recuerdo que llevamos guardado desde el 24 de agosto.",
+"Porque eres la dueña de mis sonrisas más sinceras.",
+"Por tu carita hermosa que me tiene completamente enamorado.",
+"Porque contigo hasta el silencio es cómodo y bonito.",
+"Por todas las veces que me haces sentir el chico más afortunado.",
+"Porque eres mi amor, mi vida y mi mejor casualidad.",
+"Por la magia que tienes para hacerme feliz con tan solo existir.",
+"Porque hoy en tu cumpleaños celebro la suerte de tenerte.",
+"Porque quiero seguir sumando muchos cumpleaños más a tu lado.",
+"Porque simplemente eres tú, con tus ojos, tu risa y tus locuras.",
+"Porque te amo más de lo que cabría en mil páginas como esta.",
+"Y la razón #100: Porque eres tú, mi Pelona, y no necesito más motivos para amarte toda la vida. 💙💕"
+
+];
+
+// ========================================
+// GENERAR LAS TARJETAS
+// ========================================
+
+const reasonsGrid = document.getElementById("reasonsGrid");
+
+function buildReasons() {
+
+    reasonsGrid.innerHTML = "";
+
+    razones.forEach((texto,index) => {
+
+        const card = document.createElement("div");
+        card.className = "reason-card";
+
+        const number = document.createElement("span");
+        number.className = "reason-num";
+        number.textContent = "#" + (index + 1);
+
+        const paragraph = document.createElement("p");
+        paragraph.className = "reason-text";
+        paragraph.textContent = texto;
+
+        card.appendChild(number);
+        card.appendChild(paragraph);
+
+        reasonsGrid.appendChild(card);
+
+    });
+
+}
+
+buildReasons();
+
+// ========================================
+// RAZÓN ALEATORIA
+// ========================================
+
+function showRandomReason() {
+
+    const randomIndex = Math.floor(Math.random() * razones.length);
+
+    const display = document.getElementById("randomDisplay");
+
+    document.getElementById("randomBadge").textContent =
+        "Razón #" + (randomIndex + 1) + " ✨";
+
+    document.getElementById("randomText").textContent =
+        razones[randomIndex];
+
+    display.classList.remove("visible");
+
+    void display.offsetWidth;
+
+    display.classList.add("visible");
+
+    display.scrollIntoView({
+        behavior:"smooth",
+        block:"nearest"
+    });
+
+}
+
+// ========================================
+// MOSTRAR U OCULTAR LAS 100 RAZONES
+// ========================================
+
+function toggleFullList() {
+
+    const section = document.getElementById("reasonsSection");
+    const button = document.getElementById("toggleListBtn");
+
+    const visible = section.classList.contains("visible");
+
+    if(visible) {
+
+        section.classList.remove("visible");
+
+        button.textContent = "📜 Ver mis 100 razones";
+
+    } else {
+
+        section.classList.add("visible");
+
+        button.textContent = "🙈 Ocultar mis 100 razones";
+
+        setTimeout(() => {
+
+            section.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+
+        },100);
+
+    }
+
+}
+
+// ========================================
+// ABRIR Y CERRAR LA CARTA
+// ========================================
+
+function openLetterModal() {
+
+    const modal = document.getElementById("letterModal");
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+
+    launchConfetti();
+
+}
+
+function closeLetterModal() {
+
+    document.getElementById("letterModal").classList.remove("show");
+
+    document.body.style.overflow = "";
+
+}
+
+function handleBackdropClick(event) {
+
+    if(event.target.id === "letterModal") {
+
+        closeLetterModal();
+
+    }
+
+}
+
+document.addEventListener("keydown",function(event) {
+
+    if(event.key === "Escape") {
+
+        closeLetterModal();
+
+    }
+
+});
+
+// ========================================
+// CONFETI
+// ========================================
+
+function launchConfetti() {
+
+    const colors = [
+        "#ff6b9d",
+        "#4ea8de",
+        "#ff9ebb",
+        "#89cff0",
+        "#ffd166",
+        "#ffffff"
+    ];
+
+    for(let i = 0; i < 100; i++) {
+
+        const conf = document.createElement("div");
+
+        conf.className = "confetti";
+
+        conf.style.left = Math.random() * 100 + "vw";
+
+        conf.style.backgroundColor =
+            colors[Math.floor(Math.random() * colors.length)];
+
+        conf.style.borderRadius =
+            Math.random() > .5 ? "50%" : "3px";
+
+        conf.style.width = (6 + Math.random() * 9) + "px";
+
+        conf.style.height = (6 + Math.random() * 12) + "px";
+
+        const duration = 2.5 + Math.random() * 3;
+
+        conf.style.animationDuration = duration + "s";
+
+        document.body.appendChild(conf);
+
+        setTimeout(() => {
+
+            conf.remove();
+
+        },duration * 1000 + 100);
+
+    }
+
+}
+
+// ========================================
+// CONTADOR DESDE EL 24 DE AGOSTO
+// ========================================
+
+// Año 2026. Mes 7 = agosto.
+// La hora de inicio es medianoche.
+
+const startDate = new Date(2026,7,24,0,0,0);
+
+function updateCounter() {
+
+    const now = new Date();
+
+    let difference = now.getTime() - startDate.getTime();
+
+    if(difference < 0) difference = 0;
+
+    const totalSeconds = Math.floor(difference / 1000);
+
+    const days = Math.floor(totalSeconds / 86400);
+
+    const hours = Math.floor((totalSeconds % 86400) / 3600);
+
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("days").textContent = days;
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2,"0");
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2,"0");
+
+}
+
+// Actualización inmediata y cada segundo.
+
+updateCounter();
+
+setInterval(updateCounter,1000);
+
+// ========================================
+// CORAZONES FLOTANTES DECORATIVOS
+// ========================================
+
+function createFloatingHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.textContent = Math.random() > .5 ? "💕" : "💗";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize = (14 + Math.random() * 18) + "px";
+
+    const duration = 5 + Math.random() * 5;
+
+    heart.style.animationDuration = duration + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    },duration * 1000);
+
+}
+
+// Crear corazones ocasionalmente.
+
+setInterval(createFloatingHeart,1800);
+
+</script>
+
+</body>
+</html>
